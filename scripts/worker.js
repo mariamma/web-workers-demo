@@ -5,6 +5,7 @@ this.onmessage = function(e) {
   var type = e.data.type;
 
   try {
+    console.log("Starting manipulation of " + type);
     length = imageData.data.length / 4;
     for (i = j = 0, ref = length; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
       r = imageData.data[i * 4 + 0];
